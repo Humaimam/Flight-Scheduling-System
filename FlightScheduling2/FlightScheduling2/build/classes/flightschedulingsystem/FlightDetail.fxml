@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flightschedulingsystem.FlightDetailController">
+   <children>
+      <Label layoutX="10.0" layoutY="12.0" prefHeight="104.0" prefWidth="407.0" text="  FLIGHT DETAIL">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="146.0" prefHeight="40.0" prefWidth="190.0" text="      FLIGHT No" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="flightNoField" layoutX="213.0" layoutY="149.0" prefHeight="34.0" prefWidth="190.0" />
+      <Label layoutX="70.0" layoutY="239.0" prefHeight="34.0" prefWidth="88.0" text="  SOURCE" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="arrivalHoursField" layoutX="214.0" layoutY="331.0" prefHeight="34.0" prefWidth="42.0" />
+      <Label layoutX="562.0" layoutY="239.0" prefHeight="34.0" prefWidth="123.0" text="DESTINATION" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="destinationField" layoutX="755.0" layoutY="239.0" prefHeight="34.0" prefWidth="190.0" />
+      <Label layoutX="562.0" layoutY="149.0" prefHeight="34.0" prefWidth="88.0" text=" AIRLINE" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="airlineField" layoutX="755.0" layoutY="145.0" prefHeight="34.0" prefWidth="190.0" />
+      <Label layoutX="70.0" layoutY="331.0" prefHeight="34.0" prefWidth="137.0" text="ARRIVAL TIME" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="331.0" prefHeight="34.0" prefWidth="163.0" text="DEPARTURE TIME" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="departureHourField" layoutX="755.0" layoutY="331.0" prefHeight="34.0" prefWidth="42.0" />
+      <TextField fx:id="SourceField" layoutX="214.0" layoutY="239.0" prefHeight="34.0" prefWidth="190.0" />
+      <Label layoutX="70.0" layoutY="436.0" prefHeight="34.0" prefWidth="137.0" text="HALT STATION" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="haltStationField" layoutX="215.0" layoutY="441.0" prefHeight="34.0" prefWidth="190.0" />
+      <Label layoutX="553.0" layoutY="436.0" prefHeight="34.0" prefWidth="123.0" text="  HALT TIME" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="haltHourField" layoutX="755.0" layoutY="436.0" prefHeight="34.0" prefWidth="42.0" />
+      <Label layoutX="70.0" layoutY="511.0" prefHeight="34.0" prefWidth="183.0" text="TOTAL DURATION" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="durationField" layoutX="257.0" layoutY="511.0" prefHeight="34.0" prefWidth="149.0" />
+      <JFXButton fx:id="submitButton" layoutX="853.0" layoutY="508.0" onAction="#submitButtonAction" prefHeight="41.0" prefWidth="102.0" style="-fx-background-color: #190E12;" text="SUBMIT" textFill="#aeb5ae">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="FlightNoException" layoutX="214.0" layoutY="183.0" prefHeight="25.0" prefWidth="149.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <Label fx:id="AirlineException" layoutX="755.0" layoutY="179.0" prefHeight="25.0" prefWidth="149.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <Label fx:id="HaltException" layoutX="213.0" layoutY="470.0" prefHeight="25.0" prefWidth="137.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <Label fx:id="HaltTimeException" layoutX="867.0" layoutY="436.0" prefHeight="34.0" prefWidth="149.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <Label fx:id="ArrivalException" layoutX="316.0" layoutY="331.0" prefHeight="34.0" prefWidth="137.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <Label fx:id="DepartureException" layoutX="857.0" layoutY="331.0" prefHeight="34.0" prefWidth="149.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <Label fx:id="SourceException" layoutX="213.0" layoutY="272.0" prefHeight="25.0" prefWidth="137.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <Label fx:id="DestinationException" layoutX="755.0" layoutY="273.0" opacity="0.0" prefHeight="25.0" prefWidth="149.0" text=" X This Field is Required" textFill="#eb0909" visible="false" />
+      <JFXButton fx:id="refreshButton" layoutX="704.0" layoutY="508.0" onAction="#refreshButtonAction" prefHeight="40.0" prefWidth="102.0" style="-fx-background-color: #190E12;" text="REFRESH" textFill="#aeb5ae">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="arrivalMinutesField" layoutX="262.0" layoutY="331.0" prefHeight="34.0" prefWidth="42.0" />
+      <TextField fx:id="departureMinutesField" layoutX="802.0" layoutY="331.0" prefHeight="34.0" prefWidth="42.0" />
+      <TextField fx:id="haltMinutesField" layoutX="803.0" layoutY="436.0" prefHeight="34.0" prefWidth="42.0" />
+      <Label layoutX="214.0" layoutY="365.0" prefHeight="34.0" prefWidth="149.0" text="24 Hours Format" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="755.0" layoutY="365.0" prefHeight="34.0" prefWidth="149.0" text="24 Hours Format" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="755.0" layoutY="466.0" prefHeight="34.0" prefWidth="149.0" text="24 Hours Format" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

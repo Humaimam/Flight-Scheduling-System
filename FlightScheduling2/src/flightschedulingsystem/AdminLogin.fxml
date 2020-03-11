@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flightschedulingsystem.AdminLoginController">
+   <children>
+      <ImageView fitHeight="531.0" fitWidth="799.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/353909-admin%20(1).jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.02" hue="1.0" saturation="0.03" />
+         </effect>
+      </ImageView>
+      <Label layoutX="226.0" layoutY="14.0" prefHeight="71.0" prefWidth="394.0" text="              ADMIN LOGIN " textFill="#aeb5ae">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow height="225.59" radius="109.33" width="213.73" />
+         </effect>
+      </Label>
+      <Label layoutX="146.0" layoutY="194.0" prefHeight="40.0" prefWidth="190.0" text="     USERNAME" textFill="#aeb5ae">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="266.0" prefHeight="40.0" prefWidth="190.0" text="     PASSWORD" textFill="#aeb5ae">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="367.0" layoutY="194.0" prefHeight="40.0" prefWidth="291.0" />
+      <PasswordField fx:id="passwordField" layoutX="367.0" layoutY="266.0" prefHeight="40.0" prefWidth="291.0" />
+      <JFXButton fx:id="LoginButton" layoutX="620.0" layoutY="406.0" onAction="#loginButtonAction" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #AEB5AE;" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BackButton" layoutX="33.0" layoutY="75.0" onAction="#BackButtonAction" prefHeight="41.0" prefWidth="113.0" style="-fx-background-color: #AEB5AE;" text="BACK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

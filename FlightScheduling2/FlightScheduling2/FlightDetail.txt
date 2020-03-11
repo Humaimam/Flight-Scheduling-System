@@ -1,0 +1,5 @@
+1111      ,Karachi      ,Chicago      ,PIA     ,  Dubai      ,14:55       ,2:40          ,4:50       ,12hours :15mins
+1112      ,Karachi      ,Dubai      ,PIA      , none      ,4:55       ,2:40          ,0:0       ,2hours :15mins
+1113      ,Dubai      ,Chicago      ,Flydubai  ,     none      ,14:55       ,9:40          ,0:0       ,5hours :15mins
+1114      ,Dubai      ,Islamabad      ,Flydubai ,      none      ,9:40       ,6:0          ,0:0       ,3hours :40mins
+1111      ,Karachi      ,Chicago      ,PIA      , Dubai      ,14:55       ,2:40          ,1:0       ,12hours :15mins
